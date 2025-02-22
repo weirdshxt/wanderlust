@@ -1,0 +1,265 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
+}
+
+/* navbar */
+
+.navbar {
+  /* height: 5rem; */
+  background-color: #fff !important;
+}
+
+.navbar .navbar-brand {
+  font-size: 1.7rem;
+  color: #ff385c;
+  font-weight: 500;
+}
+
+.nav-link {
+  color: #0b0b0b !important;
+}
+
+/* footer */
+
+.f-info {
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.f-info-socials {
+  font-size: 1.5rem;
+}
+
+.f-info-com {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.f-info-links a {
+  text-decoration: none;
+  color: #0b0b0b;
+}
+
+.f-info-links a:hover {
+  text-decoration: underline;
+}
+
+/* cards */
+
+.listing-card {
+  border: none !important;
+  margin-bottom: 2rem;
+}
+
+.card-img-top {
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+
+.card-body {
+  padding: 1rem 0 !important;
+}
+
+.card-body p {
+  padding: 0 !important;
+  margin-bottom: 0.8rem !important;
+}
+
+.listing-link {
+  text-decoration: none;
+}
+
+.card-img-overlay {
+  opacity: 0;
+  background-color: #fff;
+}
+
+.card-img-overlay:hover {
+  opacity: 0.2;
+}
+
+/* new listing form */
+
+.btn-primary {
+  background-color: #ff385c !important;
+  border: none !important;
+}
+
+/* show page */
+
+.show-img {
+  height: 30rem;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.location {
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.edit-image {
+  width: 250px !important;
+  object-fit: cover;
+}
+
+/* map */
+
+#map {
+  height: 20rem;
+  width: 100%;
+  border-radius: 18px;
+}
+
+.mapboxgl-popup-content {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 1rem 1.3rem 0 0.5rem !important;
+  border-radius: 12px !important;
+}
+
+.mapboxgl-popup-close-button {
+  top: 0 !important;
+  border-radius: 100% !important;
+}
+
+.mapboxgl-popup-close-button:focus-visible {
+  outline: none !important;
+}
+
+
+/* nav bar */
+
+  .dropdown-menu {
+    left: -4.3rem !important;
+  }
+
+ 
+  .search-box{
+    width: 35%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  }
+
+  .d-flex{
+    width: 100%;
+  }
+
+  .search-input{
+    border-top-left-radius: 24px !important;
+    border-bottom-left-radius: 24px !important;
+    border-bottom-right-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    width: 100%;
+    
+  }
+
+  .search-btn{
+    border-top-right-radius: 24px !important;
+    border-bottom-right-radius: 24px !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    width: 30%;
+  }
+
+
+  /* Index page */
+  
+
+
+  
+  #filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    margin-bottom: 0.2rem;
+  }
+  .filter {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.2rem;
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  .filter p {
+    font-size: 0.8rem;
+  }
+
+  .filter:hover {
+    opacity: 1;
+  }
+
+  .form-switch {
+    border: 1px solid rgba(0, 0, 0, 0.258);
+    padding: 0.5rem;
+    padding-left: 0.5rem !important;
+    padding-right: 3rem !important;
+    border-radius: 18px;
+    font-size: 1rem !important;
+    display: flex !important;
+    align-items: center !important;
+    cursor: pointer;
+  }
+
+  .form-switch label {
+    cursor: pointer;
+    font-size: 0.8rem !important;
+    margin-right: 0.5rem !important;
+  }
+
+  .form-switch:hover {
+    border: 1px solid rgb(0, 0, 0);
+  }
+
+  .tax-info {
+    display: none;
+  }
+
+
+   @media (max-width: 768px) {
+    .form-switch {
+      display: none !important; /* Hide the form switch on small screens */
+    }
+
+
+    .filter {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1rem;
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  .filter p {
+    font-size: 0.6rem;
+  }
+
+  .search-box{
+    width: 100%;
+  }
+  }
