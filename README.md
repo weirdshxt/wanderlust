@@ -1,4 +1,3 @@
-# ![Wanderlust](https://www.citypng.com/public/uploads/preview/hd-airbnb-symbol-logo-sign-icon-png-image-701751695125377fcceqslrgk.png)
 
 # Wanderlust Backend Project
 
