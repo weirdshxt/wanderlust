@@ -31,7 +31,7 @@ Wanderlust is a platform that allows users to explore and manage listings for va
 ## Usage
 1. Start the server:
    ```bash
-   npm start
+   node app.js
    ```
 
 2. Open your browser and navigate to `http://localhost:8080` to access the application.
