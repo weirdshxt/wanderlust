@@ -134,7 +134,9 @@
               method="POST"
               action="/listings/<%= listing._id %>/reviews/<%= review._id %>?_method=DELETE"
             >
+              <% if(currUser && currUser._id.equals(review.author._id)) {%>
               <button class="btn btn-sm btn-danger">Delete</button>
+              <% } %>
             </form>
           </div>
         </div>
@@ -153,4 +155,4 @@
   <br />
 </div>
 
-<script src="/JS/map.js"></script>
+<script src="map.js"></script>
