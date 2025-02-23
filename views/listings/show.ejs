@@ -3,7 +3,7 @@
 <script>
   const mapToken = "<%= process.env.MAP_TOKEN %>";
   
-  const coordinates = <%- JSON.stringify(listing.geometry.coordinates) %>;
+  const coordinates = "<%- JSON.stringify(listing.geometry.coordinates) %>";
 
 </script>
 
@@ -154,4 +154,4 @@
   <br />
   <br />
 </div>
-
+<script src="/map.js"></script>
